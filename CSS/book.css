@@ -1,0 +1,189 @@
+*,
+::before,::after{
+    margin: 0;
+    padding: 0;
+    -moz-tap-highlight:transparent;/*清除点击高亮的效果*/
+    -moz-box-sizing: border-box; /*以边框开始计算宽度*/
+}
+
+
+
+body{
+    font-size: 14px;
+    font-family: "Microsoft YaHei",sans-serif;/*第二个是手机的一个默认的字体*/
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
+
+input,textarea{
+    border: none;
+    resize: none;
+    outline: none;/*清除选中效果*/
+
+    -moz-appearance: none;/*清楚浏览器默认的样式*/
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+
+/*开始写样式 头部*/
+body{
+    background: #f5f5f5;
+}
+.zk-book-layout{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.zk-book-header .zk-book-header-box{
+    width:100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.zk-book-header .zk-book-header-content .book-content{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    height: 40px;
+    position: relative;
+    line-height: 40px;
+    background-color: #469B79;
+
+
+}
+.zk-book-header .zk-book-header-content .book-content .con-l{
+    width: 70px;
+    height: 20px;
+    font-size: 12px;
+    font-family: "宋体";
+    background-color: #CDF2E3;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 12px;
+    left: 15px;
+}
+.zk-book-header .zk-book-header-content .book-content .con-m{
+    position: absolute;
+    left: 40%;
+    font-size: 17px;
+    color: #CDF2E3;
+}
+.zk-book-header .zk-book-header-content .book-content .con-r{
+    width: 70px;
+    height: 20px;
+    font-size: 12px;
+    font-family: "宋体";
+    font-weight: bold;
+    background-color: #CDF2E3;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+
+
+/*中间内容的样式*/
+.zk-book-main{
+    width:100%;
+    overflow: hidden;
+    background-color: #CDF2E3;
+    padding-top: 55px;
+}
+.zk-book-main .zk-book-main-content{
+    width: 85%;
+    margin: 0 auto;
+    background-color: azure;
+    position: relative;
+
+}
+.zk-book-main .zk-book-main-content .list1{
+    /*
+    margin-bottom: 5px;
+    */
+    border-bottom: 2px dotted #BFBFBF;
+}
+.zk-book-main .zk-book-main-content .list1 .list1-l span{
+    display: inline-block;
+    height: 15px;
+    line-height: 15px;
+    font-size: 14px;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+.zk-book-main .zk-book-main-content .list1 .list1-l span a{
+    color: #3366CC;
+    font-weight: bolder;
+}
+.zk-book-main .zk-book-main-content .list1 .list1-l .list1-r{
+    position: absolute;
+    top: 23px;
+    right: 20px;
+}
+.zk-book-main .zk-book-main-content .list1 .list1-l .list1-r button{
+    background-color: white;
+    border-radius: 15px;
+    width: 70px;
+    height: 30px;
+    font-size: 12px;
+    color: green;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    box-shadow: -1px 0 1px #e5e5e5 , 1px 0 1px #e5e5e5 , 0 -1px 1px #e5e5e5, 0 1px 1px #e5e5e5;
+}
+.zk-book-main .zk-book-main-content .list1 .list1-l .list1-r .man{
+    font-size: 16px;
+    color: red;
+}
+
+
+/*底部内容的开始*/
+.zk-copyright{
+    width: 100%;
+    position: relative;
+}
+.zk-copyright .zk-space{
+    height: 20px;
+    width: 100%;
+    background-color: #E6E6E6;
+}
+.zk-copyright .zk-copyright-content{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #CDF2E3;
+}
+.zk-copyright .zk-copyright-content .zk-cc-text{
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    margin-left: -23%;
+}
+.zk-copyright .zk-copyright-content li{
+    float: left;
+    font-size: 10px;
+    margin: 0 5px;
+}
